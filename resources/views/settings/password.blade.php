@@ -50,7 +50,28 @@
                                 <x-forms.input label="Confirm Password" name="password_confirmation" type="password" />
                             </div>
 
-                            <div>
+                            @if (!empty($user->two_factor_secret))
+                                <div class="mt-6">
+                                    <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100 mb-4">{{ __('Two-factor Authentication') }}</h3>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+                                        {{ __('Please enter either your authenticator code or a recovery code to update your password.') }}
+                                    </p>
+                                    <div class="space-y-4">
+                                        <x-forms.input name="two_factor_code" type="text" label="Authenticator Code" placeholder="Enter your authenticator code" />
+                                        <div class="relative">
+                                            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                                                <div class="w-full border-t border-gray-300 dark:border-gray-600"></div>
+                                            </div>
+                                            <div class="relative flex justify-center">
+                                                <span class="px-2 bg-white dark:bg-gray-800 text-sm text-gray-500 dark:text-gray-400">OR</span>
+                                            </div>
+                                        </div>
+                                        <x-forms.input name="recovery_code" type="text" label="Recovery Code" placeholder="Enter your recovery code" />
+                                    </div>
+                                </div>
+                            @endif
+
+                            <div class="mt-6">
                                 <x-button type="primary">{{ __('Update Password') }}</x-button>
                             </div>
                         </form>
