@@ -43,6 +43,12 @@
         this.sidebarOpen = !this.sidebarOpen;
         localStorage.setItem('sidebarOpen', this.sidebarOpen);
     },
+    temporarilyOpenSidebar() {
+        if (!this.sidebarOpen) {
+            this.sidebarOpen = true;
+            localStorage.setItem('sidebarOpen', true);
+        }
+    },
     formSubmitted: false,
 }">
 

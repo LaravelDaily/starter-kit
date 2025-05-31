@@ -7,6 +7,6 @@
 ])>
     <div class="flex items-center">
         @svg($icon, $active ? 'w-5 h-5 mr-3 text-white' : 'w-5 h-5 mr-3 text-gray-500')
-        <span>{{ $slot }}</span>
+        <span x-data="{}" :class="{ 'opacity-0 hidden': !sidebarOpen }">{{ $slot }}</span>
     </div>
 </a>
