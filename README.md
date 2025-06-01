@@ -53,7 +53,10 @@ To use this kit, you can install it using:
 ```bash
 laravel new --using=laraveldaily/starter-kit
 ```
-
+or 
+```bash
+composer create-project laraveldaily/starter-kit your-project-name
+```
 From there, you can modify the kit to your needs.
 
 ---
