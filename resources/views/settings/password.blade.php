@@ -24,7 +24,7 @@
         </p>
     </div>
 
-    <div class="p-6">
+    <div class="p-0">
         <div class="flex flex-col md:flex-row gap-6">
             <!-- Sidebar Navigation -->
             @include('settings.partials.navigation')
