@@ -110,8 +110,6 @@
 
 
 <body class="bg-gradient-to-br from-[#2A2A72] to-[#009FFD] text-white font-sans">
- 
-
     <!-- Main Content -->
     <main class="flex-1 p-0 space-y-0">
    

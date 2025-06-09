@@ -1,6 +1,6 @@
 <x-layouts.app>
     <!-- Breadcrumbs -->
-    <div class="mb-6 flex items-center text-sm">
+    <div class="mb-2 flex items-center text-sm">
         <a href="{{ route('dashboard') }}"
             class="text-blue-600 dark:text-blue-400 hover:underline">{{ __('Dashboard') }}</a>
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2 text-gray-400" fill="none" viewBox="0 0 24 24"
@@ -22,7 +22,7 @@
         <p class="text-gray-600 dark:text-gray-400 mt-1">{{ __('Update your name and email address') }}</p>
     </div>
 
-    <div class="p-6">
+    <div class="p-0">
         <div class="flex flex-col md:flex-row gap-6">
             <!-- Sidebar Navigation -->
             @include('settings.partials.navigation')
