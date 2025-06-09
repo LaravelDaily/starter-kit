@@ -9,8 +9,8 @@
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
-            </button>
-            <div class="ml-4 font-semibold text-xl text-blue-600 dark:text-blue-400">{{ config('app.name') }}</div>
+            </button>  
+            <div class="ml-4 font-semibold text-xl text-blue-600 dark:text-blue-400">Welcome {{ Auth::user()->name }}</div>
         </div>
 
         <!-- Right side: Search, notifications, profile -->
@@ -30,6 +30,18 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </button>
+                
+
+
+
+
+
+                            
+                                
+                           
+
+
+
 
                 <div x-show="open" @click.away="open = false" :class="{ 'block': open, 'hidden': !open }"
                     class="hidden absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 rounded-md shadow-lg py-1 z-50 border border-gray-200 dark:border-gray-700">
