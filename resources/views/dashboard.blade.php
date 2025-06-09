@@ -10,7 +10,7 @@
             <div class="flex items-center justify-between">
                 <div>
                     <p class="text-lg font-semibold text-black dark:text-white">{{ __('Total Users') }}</p>
-                    <p class="text-2xl font-bold text-green-400 dark:text-green-400 mt-1">24001</p>
+                    <p class="text-2xl font-bold text-green-400 dark:text-green-400 mt-1">2401</p>
                     <p class="text-xs text-gray-500 flex items-center mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -60,7 +60,7 @@
             <div class="flex items-center justify-between">
                 <div>
                     <p class="text-lg font-semibold text-black dark:text-white">{{ __('Total Orders') }}</p>
-                    <p class="text-2xl font-bold text-green-400 dark:text-green-400 mt-1">107</p>
+                    <p class="text-2xl font-bold text-green-400 dark:text-green-400 mt-1">117</p>
                     <p class="text-xs text-gray-500 flex items-center mt-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
