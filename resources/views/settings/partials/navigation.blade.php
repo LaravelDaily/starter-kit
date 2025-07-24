@@ -2,34 +2,22 @@
     <nav class="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden">
         <ul class="divide-y divide-gray-200 dark:divide-gray-700">
             <li>
-                <a href="{{ route('settings.profile.edit') }}" @class([
-                    'bg-gray-100 dark:bg-gray-700 block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-600' => !request()->routeIs(
-                        'settings.profile.*'),
-                    'bg-white dark:bg-gray-600 block px-4 py-3  text-gray-900 dark:text-gray-100 font-medium' => request()->routeIs(
-                        'settings.profile.*'),
-                ])>
+                <x-tab href="{{ route('settings.profile.edit') }}"
+                    active="{{ request()->routeIs('settings.profile.*') }}">
                     {{ __('Profile') }}
-                </a>
+                </x-tab>
             </li>
             <li>
-                <a href="{{ route('settings.password.edit') }}" @class([
-                    'bg-gray-100 dark:bg-gray-700 block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-600' => !request()->routeIs(
-                        'settings.password.*'),
-                    'bg-white dark:bg-gray-600  block px-4 py-3 text-gray-900 dark:text-gray-100 font-medium' => request()->routeIs(
-                        'settings.password.*'),
-                ])>
+                <x-tab href="{{ route('settings.password.edit') }}"
+                    active="{{ request()->routeIs('settings.password.*') }}">
                     {{ __('Password') }}
-                </a>
+                </x-tab>
             </li>
             <li>
-                <a href="{{ route('settings.appearance.edit') }}" @class([
-                    'bg-gray-100 dark:bg-gray-700 block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-600' => !request()->routeIs(
-                        'settings.appearance.*'),
-                    'bg-white dark:bg-gray-600 block px-4 py-3  text-gray-900 dark:text-gray-100 font-medium' => request()->routeIs(
-                        'settings.appearance.*'),
-                ])>
+                <x-tab href="{{ route('settings.appearance.edit') }}"
+                    active="{{ request()->routeIs('settings.appearance.*') }}">
                     {{ __('Appearance') }}
-                </a>
+                </x-tab>
             </li>
         </ul>
     </nav>
