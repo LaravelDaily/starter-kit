@@ -22,6 +22,16 @@
                 </a>
             </li>
             <li>
+                <a href="{{ route('two-factor.show') }}" @class([
+                    'bg-gray-100 dark:bg-gray-700 block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-600' => !request()->routeIs(
+                        'two-factor.*'),
+                    'bg-white dark:bg-gray-600 block px-4 py-3  text-gray-900 dark:text-gray-100 font-medium' => request()->routeIs(
+                        'two-factor.*'),
+                ])>
+                    {{ __('Two-Factor Authentication') }}
+                </a>
+            </li>
+            <li>
                 <a href="{{ route('settings.appearance.edit') }}" @class([
                     'bg-gray-100 dark:bg-gray-700 block px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-gray-600' => !request()->routeIs(
                         'settings.appearance.*'),
