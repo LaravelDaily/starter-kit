@@ -46,6 +46,11 @@
                                     value="{{ old('email', $user->email) }}" />
                             </div>
 
+                            <div class="mb-6">
+                                <x-forms.input label="Nickname" name="nickname" type="nickname"
+                                    value="{{ old('nickname', $user->nickname) }}" />
+                            </div>
+
                             <div>
                                 <x-button type="primary">{{ __('Save') }}</x-button>
                             </div>

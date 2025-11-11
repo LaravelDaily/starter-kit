@@ -12,6 +12,9 @@
                 <div>
                     <x-forms.input label="Full Name" name="name" type="text" placeholder="{{ __('Full Name') }}" autofocus />
                 </div>
+                <div>
+                    <x-forms.input label="Nickname " name="nickname" type="text" placeholder="{{ __('NickName') }}"/>
+                </div>
 
                 <!-- Email Input -->
                 <div>
